@@ -1,0 +1,139 @@
+body {
+	
+	background-image: url('love.jpg');
+	background-size: 100% 100% !important;
+	font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+	margin: 12px 0;
+}
+
+.card-container .card .side img{
+	cursor: pointer;
+	height: 100%;
+	perspective: 600;
+	position: relative;
+}
+
+.card-container {
+	margin: auto auto;
+	cursor: pointer;
+	height: 150px;
+	perspective: 600;
+	position: relative;
+	width: 150px;
+}
+.card {
+	height: 100%;
+	margin: auto auto;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	width: 100%;
+}
+.card:hover {
+	transform: rotateY(180deg);
+}
+.card .side {
+	backface-visibility: hidden;
+	border-radius: 6px;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+}
+.card .back {
+	margin: 0 auto;
+	width: 200px;
+	background: #00ff1e;
+	color: #0087cc;
+	line-height: 150px;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+/* Untuk block tulisan*/
+.container {
+	border-style: hidden;
+	border-radius: 1px;
+	margin: auto auto;
+	margin-top:10px;
+	border: 1px;
+     width: 55%;
+	text-align: center;
+	height: 110px;
+	background-color: red;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.container h1{
+     padding-top: 5px;
+}
+@media only screen {
+	.container h1{
+		margin-top:3px;
+	}
+}
+
+@keyframes example {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: yellow;
+	}
+	50% {
+		background-color: blue;
+	}
+	100% {
+		background-color: green;
+	}
+}
+/*Animasi ke 3*/
+svg {
+	display: block;
+	font: 6.5em "Montserrat";
+	width: 800px;
+	height: 150px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.text-copy {
+	fill: none;
+	stroke: white;
+	stroke-dasharray: 6% 29%;
+	stroke-width: 5px;
+	stroke-dashoffset: 0%;
+	animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+	stroke: #4d163d;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+	stroke: #bd0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+	stroke: #bd0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+	stroke: #fdb731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+	100% {
+		stroke-dashoffset: -35%;
+	}
+}
