@@ -1,6 +1,7 @@
 body {
 	
 	background-image: url('love.jpg');
+        
 	background-size: 100% 100% !important;
 	font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light",
 		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
@@ -53,6 +54,7 @@ body {
 /* Untuk block tulisan*/
 .container {
 	border-style: hidden;
+        opacity: 1.0;
 	border-radius: 1px;
 	margin: auto auto;
 	margin-top:10px;
