@@ -54,7 +54,7 @@ body {
 /* Untuk block tulisan*/
 .container {
 	border-style: hidden;
-        opacity: 0,1;
+        opacity: 0.1;
 	border-radius: 1px;
 	margin: auto auto;
 	margin-top:10px;
