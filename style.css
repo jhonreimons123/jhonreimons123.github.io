@@ -69,6 +69,7 @@ body {
 }
 .container h1{
      padding-top: 5px;
+     color: white;
 }
 @media only screen {
 	.container h1{
